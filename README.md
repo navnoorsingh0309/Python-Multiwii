@@ -1,11 +1,11 @@
-#Python Multiwii
+# Python Multiwii
 
 
 pymultiwii is used to handle multiwii serial protocol to send/receieve data from boards accesed with multiwii.
 
 It read data or send commands from your pc thorugh serial communication. You can control your multirotar platform wirelessly using boards like raspberry pi, flight controller, etc.
 
-##Installation
+## Installation
 
 To install pymultiwii usinf pip, run the following command:
 
@@ -13,7 +13,7 @@ To install pymultiwii usinf pip, run the following command:
 pip install multiwii
 ```
 
-#Multwii Serial Protocol(MSP)
+# Multwii Serial Protocol(MSP)
 
 Format of MSP is:
 ```
@@ -28,7 +28,7 @@ checksum = XOR of <size>, <code>
   
 http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol
 
-###How data flow happens?
+### How data flow happens?
 
 Communication is operated using Master/Slave Technology. There are devices which act as 'Master' and send command/data to 'Slave' device. Some devices at as both 'Master' and 'Slave' depending on situation, like in this while sending our PC is 'Master' and board is 'Slave' and while receiving roles interchange.
 'Master' interacts with 'Slave' in this case with three types of messages. These messages are: 
@@ -38,7 +38,7 @@ Communication is operated using Master/Slave Technology. There are devices which
 
 #Some Samples
   
-###Receiving Data
+### Receiving Data
 
 Create Multiwii object that receives data from the serial port mentioned by using getData function:
 ```
