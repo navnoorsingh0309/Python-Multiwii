@@ -29,7 +29,10 @@ code = message_id as per link
 
 data = as per link
 
-checksum = XOR of <size>, <code>
+checksum = XOR of 
+```
+$<size>, <code>$
+```
   
 http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol
 
