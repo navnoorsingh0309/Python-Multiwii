@@ -49,20 +49,4 @@ board = Multiwii(serialPort)
 while True:
     print board.getData(Multiwii.ATTITUTE)
 ```
-You can also do this without 'pymultiwii' library
-```
-import serial
-import time
-#Configure Serial port
-port = 'COM4'   #Repalce with correct port
-baudrate = 115200    #Baudrate-speed of data transmittion
-
-#Open the serial connection
-serialP = serial.Serial(port, baudrate, timeout=1)
-
-#Rading Data
-def read_Data():
-    while True:    #When get
-        if serialP.read()==b'$'   #$ in byte format
-            header = serialP.read(2)
-            if 
+You can also do this without 'pymultiwii' library. I have added python file in folders
