@@ -20,10 +20,15 @@ Format of MSP is:
 $<preamble><direction><size><code><data><checksum>$
 ```
 Premable = '$M'(2 bytes)
+
 Direction = '<' or '>' for data receiving and sending.
+
 Size = its data length
+
 code = message_id as per link
+
 data = as per link
+
 checksum = XOR of <size>, <code>
   
 http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol
