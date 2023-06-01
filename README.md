@@ -16,7 +16,9 @@ pip install multiwii
 #Multwii Serial Protocol(MSP)
 
 Format of MSP is:
-<preamble><direction><size><code><data><checksum>
+```
+$<preamble><direction><size><code><data><checksum>$
+```
 Premable = '$M'(2 bytes)
 Direction = '<' or '>' for data receiving and sending.
 Size = its data length
@@ -33,5 +35,12 @@ Communication is operated using Master/Slave Technology. There are devices which
 1. Command-Incoming message
 2. Request-Incoming message with implicit outgoing response
 3. Response-Outgoing response
-  
 
+#Some Samples
+  
+###Receiving Data
+
+Create Multiwii object that receives data from the serial port mentioned by using getData function:
+```
+from
+```
