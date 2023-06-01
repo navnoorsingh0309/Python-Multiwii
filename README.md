@@ -29,10 +29,7 @@ code = message_id as per link
 
 data = as per link
 
-checksum = XOR of 
-```
-$<size>, <code>$
-```
+checksum = XOR of `$<size>, <code>$`
   
 http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol
 
@@ -57,4 +54,11 @@ board = Multiwii(serialPort)
 while True:
     print board.getData(Multiwii.ATTITUTE)
 ```
+
+`Output`
+
+{'timestamp': 1417432436.878697, 'elapsed': 0.016, 'angx': -26.8, 'angy': -24.8, 'heading': -84.0}
+
 You can also do this without 'pymultiwii' library. I have added python file in folders
+
+
