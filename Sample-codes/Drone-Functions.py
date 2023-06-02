@@ -41,4 +41,6 @@ total_data.append(checksum)
 serialPort.write(struct.pack('<3c2B'+data_format+'B', *total_data))
 
 
-#
+#Take-Off
+#MSP_SET_COMMAND=217
+data_for_takeoff = 
