@@ -42,8 +42,8 @@ while True:
 #for 'M>'
 serialPort.read(2)
 #length, code, data
-data_length = struct.unpack('<2b', serialPort.read())
-code = struct.unpack('<2b', serialPort.read())
+data_length = struct.unpack('<b', serialPort.read())
+code = struct.unpack('<b', serialPort.read())
 data = serialPort.read(data_length)
 
 #Now categorise this data in AngleX, AngleY, and Heading
