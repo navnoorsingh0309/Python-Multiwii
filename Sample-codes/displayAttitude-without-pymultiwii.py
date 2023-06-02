@@ -24,7 +24,7 @@ total_data_to_send.append(checksum)
 format_to = '<3c2BB'
 #'<' little endian byte order
 #'3c' for 3 character(3  bytes) [$M<]
-#'2B' for 2 bytes of code
+#'2B' for 2 bytes of length and code
 #we can put another data format for main data after this if we ned
 #'B' for checksum
 
