@@ -39,7 +39,7 @@ while True:
   header = serialPort.read().decode('utf-8')
   if header=='$':
     break;
-#for 'M<'
+#for 'M>'
 serialPort.read(2)
 #length, code, data
 data_length = struct.unpack('<2b', serialPort.read())
